@@ -18,21 +18,27 @@ body {
   padding: 10px;
   border-bottom: 1px solid rgb(65, 25, 25);
 }
-.head a{
+.head a {
   /* the very first */
   color: whitesmoke;
   text-decoration: none;
   font-size: 20px;
   padding: 3px;
 }
-.head a:hover{
-  border: 2px solid whitesmoke;   
+.head a:hover {
+  border: 2px solid whitesmoke;
   padding: 3px;
 }
-.navbar-container i{
+div #id,#i1{
   font-size: 25px;
   display: none;
-}
+  color: white;
+  }
+#i1 {
+  font-size: 15px;
+  position: relative;
+  right: -145px;
+} 
 .navbar-container ul {
   /* removes the dot  in list and alin in flex */
   list-style: none;
@@ -43,6 +49,7 @@ body {
 .navbar-container ul li {
   /* gives margin in list*/
   margin-right: 0px;
+  display: inline;
 }
 .navbar-container ul li a {
   /* more property*/
@@ -61,7 +68,7 @@ body {
 .home {
   /* basic propety of home page*/
   height: 629px;
-  background: linear-gradient( rgb(244, 243, 243), rgb(20, 5, 234));
+  background: linear-gradient(rgb(244, 243, 243), rgb(20, 5, 234));
   border-bottom: 2px rgba(8, 21, 13, 0.6) solid;
   user-select: none;
 }
@@ -84,8 +91,8 @@ body {
   border-right: 5px solid;
   white-space: nowrap;
   overflow: hidden;
-  width: 70%;
-  animation: typing 2s ease-in-out, cursor 0.4s step-end infinite alternate;
+  width: 75%;
+  animation: typing 3s ease-in-out, cursor 0.4s step-end infinite alternate;
 }
 /* the key frames to the animation*/
 @keyframes cursor {
@@ -117,9 +124,13 @@ body {
   flex-direction: column;
 }
 /* here it create boxes to the the text*/
-.About,.skills {
+.About,
+.skills {
   height: fit-content;
-  background: linear-gradient(rgba(82, 82, 240, 0.525),rgba(228, 113, 107, 0.927));
+  background: linear-gradient(
+    rgba(82, 82, 240, 0.525),
+    rgba(228, 113, 107, 0.927)
+  );
 }
 .myself1 {
   height: 150px;
@@ -128,11 +139,11 @@ body {
   border: 2px solid green;
   border-radius: 20px;
   padding: 4px;
-  background-color:rgb(211, 197, 197);
+  background-color: rgb(211, 197, 197);
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.myself1:hover{
+.myself1:hover {
   scale: 1.02;
 }
 /* removes the scrollbar*/
@@ -156,7 +167,7 @@ body {
   border: 2px solid green;
   border-radius: 20px;
   padding: 4px;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   overflow: hidden;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -252,40 +263,42 @@ body {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   .myself2 {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  .home p{
+@media screen and (max-width: 600px) {
+  .home p {
     padding-left: 20px;
     font-size: 1em;
     width: 160px;
   }
-  .home{
+  .home {
     height: 500px;
   }
-  .navbar-container{
+  .navbar-container {
     font-size: 10px;
   }
-  .head a{
+  .head a {
     font-size: 15px;
     margin-right: 10px;
   }
   .navbar-container i{
-    display: block;
-  }
-  .navbar-container ul{
+    display: flex;
+  } 
+  /* #id{
+   
+  } */
+  .navbar-container ul {
     display: none;
     flex-direction: column;
     height: 140px;
     width: 30%;
-}
-  .navbar-container ul li{
+  }
+  .navbar-container ul li {
     margin-bottom: 29px;
     position: relative;
-    right:100%;
-    
+    right: 100%;
   }
 }
