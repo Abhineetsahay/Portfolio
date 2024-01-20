@@ -1,0 +1,291 @@
+body {
+  /* the body of the program */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-container {
+  /* set the basic property of navbar */
+  background-color: rgba(29, 25, 25, 0.911);
+  overflow: hidden;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgb(65, 25, 25);
+}
+.head a{
+  /* the very first */
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 3px;
+}
+.head a:hover{
+  border: 2px solid whitesmoke;   
+  padding: 3px;
+}
+.navbar-container i{
+  font-size: 25px;
+  display: none;
+}
+.navbar-container ul {
+  /* removes the dot  in list and alin in flex */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-container ul li {
+  /* gives margin in list*/
+  margin-right: 0px;
+}
+.navbar-container ul li a {
+  /* more property*/
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+.active-element {
+  /* styling*/
+  background-color: aqua;
+}
+.navbar1:hover {
+  /* hover effect other than #home*/
+  background-color: rgba(8, 75, 8, 0.767);
+}
+.home {
+  /* basic propety of home page*/
+  height: 629px;
+  background: linear-gradient( rgb(244, 243, 243), rgb(20, 5, 234));
+  border-bottom: 2px rgba(8, 21, 13, 0.6) solid;
+  user-select: none;
+}
+.home p {
+  /* give property to p tag*/
+  margin: 0;
+  color: rgb(196, 42, 42);
+  padding-left: 100px;
+  font-size: 2.5em;
+}
+.home p:nth-child(1) {
+  padding-top: 200px;
+  color: rgb(255, 244, 244);
+}
+.home div {
+  display: inline-block;
+}
+#auto {
+  /* here it gives the animation to the name*/
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+  animation: typing 2s ease-in-out, cursor 0.4s step-end infinite alternate;
+}
+/* the key frames to the animation*/
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+.About {
+  /* give to seperate it from .skills*/
+  border-bottom: 2px #111 solid;
+}
+/*give same styling to .About and .skills */
+.About,
+.skills {
+  width: 100%;
+  flex-direction: column;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myself {
+  display: flex;
+  flex-direction: column;
+}
+/* here it create boxes to the the text*/
+.About,.skills {
+  height: fit-content;
+  background: linear-gradient(rgba(82, 82, 240, 0.525),rgba(228, 113, 107, 0.927));
+}
+.myself1 {
+  height: 150px;
+  width: 250px;
+  overflow-y: scroll;
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 4px;
+  background-color:rgb(211, 197, 197);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.myself1:hover{
+  scale: 1.02;
+}
+/* removes the scrollbar*/
+.myself1::-webkit-scrollbar {
+  background-color: transparent;
+}
+.myself2 {
+  color: rgb(54, 54, 255);
+}
+.skills {
+  height: fit-content;
+}
+
+.fa-skill {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fa-skill-1 {
+  height: 150px;
+  width: 250px;
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 4px;
+  background-color:whitesmoke;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* centering the elements*/
+.fa-skill-2 {
+  color: rgb(219, 53, 53);
+  text-decoration: underline;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+/* giving images property*/
+.clogo,
+.JavaScriptlogo,
+.htmllogo,
+.csslogo {
+  background-size: contain;
+  height: 100px;
+}
+.JavaScriptlogo,
+.htmllogo,
+.csslogo {
+  height: 120px;
+}
+/* footer parts starts from here */
+.Contact {
+  background-color: #0f1111;
+  height: 200px;
+}
+/* giving h3 styling  */
+.contact h3 {
+  margin: 0;
+  color: aliceblue;
+  margin-top: 10px;
+}
+/* centering elements  */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* removing bullet points  */
+.contact ul {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 0px;
+}
+/* giving border */
+.contact ul li {
+  border: 2px solid rgba(197, 71, 71, 0.749);
+  border-radius: 4px;
+  margin-left: 10px;
+  float: left;
+  padding: 2.5px;
+}
+/* styling p of footer   */
+.contact p {
+  color: whitesmoke;
+  margin: 0px;
+}
+.contact div p:nth-child(1) {
+  color: whitesmoke;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+/*all media query used for responsivness*/
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .navbar-container {
+    width: 98.4%;
+  }
+  .home {
+    width: 100%;
+  }
+  .About,
+  .skills,
+  .Contact {
+    width: 100%;
+  }
+  .myself {
+    flex-direction: row;
+  }
+  .fa-skill {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .myself2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home p{
+    padding-left: 20px;
+    font-size: 1em;
+    width: 160px;
+  }
+  .home{
+    height: 500px;
+  }
+  .navbar-container{
+    font-size: 10px;
+  }
+  .head a{
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .navbar-container i{
+    display: block;
+  }
+  .navbar-container ul{
+    display: none;
+    flex-direction: column;
+    height: 140px;
+    width: 30%;
+}
+  .navbar-container ul li{
+    margin-bottom: 29px;
+    position: relative;
+    right:100%;
+    
+  }
+}
