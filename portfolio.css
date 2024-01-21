@@ -29,13 +29,17 @@ body {
   border: 2px solid whitesmoke;
   padding: 3px;
 }
-div #id,#i1{
+#i{
+  width: 45px; ;
+}
+ #id{
   font-size: 25px;
   display: none;
   color: white;
   }
 #i1 {
   font-size: 15px;
+  display: none;
   position: relative;
   right: -145px;
 } 
@@ -284,7 +288,7 @@ div #id,#i1{
     font-size: 15px;
     margin-right: 10px;
   }
-  .navbar-container div #idi{
+ #id{
     display: flex;
   } 
   /* #id{
