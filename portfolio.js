@@ -21,5 +21,6 @@ cross1.addEventListener("click",()=>{
          ul.style.display = "none";
         i.style.display = "flex";
         cross1.style.display="none";
+        console.log("hi");
     }
 })
