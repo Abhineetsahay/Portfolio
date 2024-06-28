@@ -21,7 +21,7 @@ const ProjectData = [
     link: "https://github.com/Abhineetsahay/Chat-Buddies",
     title: "Chat Buddies",
     description:
-      "Chat Buddies is a real-time web chat application that leverages modern web technologies to provide an interactive and seamless messaging experience. The application supports real-time messaging, user authentication, and responsive UI design.",
+      "Chat Buddies is a real-time web chat application that leverages modern web technologies to provide an interactive and seamless messaging experience. The application supports real-time messaging, user authentication.",
 
   },
   {
@@ -30,7 +30,7 @@ const ProjectData = [
     link: "https://github.com/Abhineetsahay/E-commerce",
     title: "E-commerce Website",
     description:
-      "An e-commerce platform developed with the MERN stack (MongoDB, Express.js, React, Node.js). This comprehensive project includes features such as user authentication and authorization, product management, order processing, payment integration, and a user-friendly admin dashboard. It aims to provide a fully functional, responsive online shopping experience.",
+      "An e-commerce platform developed with the MERN stack (MongoDB, Express.js, React, Node.js). This comprehensive project includes features such as user authentication and authorization, product management,Cart Management. It aims to provide a fully functional, responsive online shopping experience.",
    
   },
   {
@@ -39,7 +39,7 @@ const ProjectData = [
     link: "https://github.com/Abhineetsahay/Space-Explorer",
     title: "Space Explorer",
     description:
-      "Explore the universe with this interactive web application. Built using modern web technologies, it offers a visually engaging experience where users can learn about different celestial bodies and space phenomena. The project includes dynamic content, interactive elements, and educational resources for space enthusiasts.",
+      "Explore the universe with this interactive web application. Built using modern web technologies, it offers a visually engaging experience where users can learn about different celestial bodies and space phenomena. The project includes dynamic content, and educational resources for space enthusiasts.",
   
   },
 ];
