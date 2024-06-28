@@ -39,7 +39,7 @@ const ProjectData = [
     link: "https://github.com/Abhineetsahay/Space-Explorer",
     title: "Space Explorer",
     description:
-      "Explore the universe with this interactive web application. Built using modern web technologies, it offers a visually engaging experience where users can learn about different celestial bodies and space phenomena. The project includes dynamic content, and educational resources for space enthusiasts.",
+      "Explore the universe with this interactive web application. Built using modern web technologies, it offers a visually engaging experience where users can learn about different celestial bodies and space phenomena. The project includes educational resources for space enthusiasts.",
   
   },
 ];
