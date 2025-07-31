@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
-import "./globals.css"; 
+import "./globals.css";
+import LenisScroll from "@/components/LenisScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/vercel.svg" />
       </head>
       <body className={`${inter.className} bg-black text-white`}>
-        {children}
+        <LenisScroll>{children}</LenisScroll>
       </body>
     </html>
   );

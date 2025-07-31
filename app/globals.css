@@ -15,8 +15,8 @@
 }
 /* globals.css */
 body {
-  background-color: #000; /* Set background color to black */
-  color: white; /* Ensure text is visible */
+  background-color: #000; 
+  color: white; 
 }
 
 body {
@@ -24,8 +24,6 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 @layer base {
   :root {
