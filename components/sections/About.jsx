@@ -31,8 +31,8 @@ const sections = [
 
 export default function About() {
   return (
-    <section className="relative bg-black text-white min-h-screen w-full px-4 py-20 flex flex-col items-center justify-center">
-      <SectionTitle title="Who I am?" />
+    <section className="min-h-screen w-full px-4 py-20 flex flex-col items-center justify-center">
+       <SectionTitle title="Who I am?" />
       <div className="w-full max-w-6xl mx-auto flex justify-center px-4">
 
         <div className="w-full">

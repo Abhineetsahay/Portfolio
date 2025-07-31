@@ -98,18 +98,14 @@ export default function Projects() {
   ];
 
   return (
-    <section className="relative bg-black text-white min-h-screen w-full px-4 py-20 flex flex-col items-center justify-center">
+    <section className="relative min-h-screen w-full px-4 py-20 flex flex-col items-center justify-center">
       <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
         Projects
       </h2>
       <div className="w-full max-w-6xl flex flex-col gap-16">
         {projectCategories.map((cat) => (
-          <motion.div
+          <div
             key={cat.category}
-            // initial={{ opacity: 0, y: 50 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.5, delay: 0.2 }}
-            // viewport={{ once: true, amount: 0.2 }}
           >
             <h3 className="text-2xl sm:text-3xl font-semibold mb-6 text-left border-l-4 border-blue-500 pl-4">
               {cat.category}
@@ -123,7 +119,7 @@ export default function Projects() {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{
                     duration: 1,
-                    // delay: index * 0.2,
+                    delay: index * 0.2,
                     ease: [0.22, 1, 0.36, 1],
                   }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -188,7 +184,7 @@ export default function Projects() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

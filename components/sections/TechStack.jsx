@@ -2,7 +2,6 @@
 "use client";
 
 import * as TechStackIcons from "@/public/TechStack";
-
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function TechStack() {
@@ -69,7 +68,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="w-full py-20 bg-black text-white">
+    <section className="w-full py-20">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         My Tech Stack
       </h2>
