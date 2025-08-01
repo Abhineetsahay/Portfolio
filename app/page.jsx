@@ -5,20 +5,18 @@ import About from "@/components/sections/About";
 import Home from "@/components/sections/Home";
 import Projects from "@/components/sections/Projects";
 import Achievements from "@/components/sections/Achievements";
-import ParticlesBackground from "@/components/ui/ParticlesBackground"; 
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import Connect from "@/components/sections/Connect";
 
 export default function Main() {
   return (
     <div className="relative overflow-hidden">
-      <ParticlesBackground /> 
-      <BackgroundBeams/>
-      <div className="relative z-10">
+      <div className="relative z-10 scroll-smooth">
         <Home />
         <About />
         <TechStack />
         <Projects />
-        {/* <Achievements /> */}
+        <Achievements />
+        <Connect/>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 "use client";
 
 import * as TechStackIcons from "@/public/TechStack";
+import Image from "next/image";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function TechStack() {
@@ -68,7 +69,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         My Tech Stack
       </h2>
@@ -80,16 +81,18 @@ export default function TechStack() {
               {group.category}
             </h3>
             <InfiniteMovingCards
-              items={group.items.map((tech) => ({
+              items={group.items.slice(0, 6).map((tech) => ({
                 name: tech.name,
                 quote: (
                   <div className="flex items-center gap-3">
-                    <img
+                    <Image
                       src={tech.icon}
                       alt={tech.name}
+                      height={24}
+                      width={24}
                       className="w-6 h-6 object-contain"
+                      loading="lazy"
                     />
-                    <span>{tech.name}</span>
                   </div>
                 ),
                 title: "",
