@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -9,13 +9,15 @@ const achievements = [
   },
   {
     title: "Hacktober Contributor",
-    description: "Successfully merged 4 pull requests in Hacktoberfest.",
+    description:
+      "Successfully merged 4 pull requests in Hacktoberfest.",
   },
   {
-    title: "2⭐ on CodeChef, max rating (1519)",
+    title: "2⭐ on CodeChef max rating: <strong>1519</strong>",
   },
   {
-    title: "Pupil on CodeForces, max rating (1232)",
+    title:
+      '<span class="text-[#39ff14]">Pupil</span> on Codeforces — max rating: <strong>1232</strong>',
   },
   {
     title: "450+ DSA questions in LeetCode",
@@ -45,7 +47,10 @@ export default function Achievements() {
                 "hover:scale-[1.02] hover:border-blue-500"
               )}
             >
-              <h3 className="text-xl font-semibold mb-1">{ach.title}</h3>
+              <h3
+                className="text-xl font-semibold mb-1"
+                dangerouslySetInnerHTML={{ __html: ach.title }}
+              ></h3>
               {ach.description && (
                 <p className="text-sm text-gray-400">{ach.description}</p>
               )}

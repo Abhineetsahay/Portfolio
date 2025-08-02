@@ -14,7 +14,7 @@ const sections = [
   {
     title: "About Me",
     description:
-      "Hi, I’m Abhineet Sahay, a 3rd-year Computer Science student at KIIT University.\nI’m passionate about building meaningful and impactful software solutions.\nI’m constantly striving to improve my skills as a future software developer.",
+      "Hi, I’m Abhineet Sahay, a 3rd-year Computer Science student at KIIT University.\nI’m passionate about building meaningful and impactful software solutions.\nI’m constantly striving to improve my skills as a future Software developer.",
   },
   {
     title: "About My Tech Stack",

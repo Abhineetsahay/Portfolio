@@ -17,7 +17,7 @@ export { default as Netlify } from './Netlify.png';
 export { default as NextJs } from './NextJs.png';
 export { default as NodeJs } from './NodeJs.png';
 export { default as Numpy } from './Numpy.png';
-export { default as Pandas } from './Pandas.png';
+export { default as Pandas } from './pandas.webp';
 export { default as PostMan } from './PostMan.png';
 export { default as Prisma } from './Prisma.png';
 export { default as Python } from './Python.png';

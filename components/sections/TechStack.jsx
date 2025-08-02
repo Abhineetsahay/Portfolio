@@ -88,8 +88,8 @@ export default function TechStack() {
                     <Image
                       src={tech.icon}
                       alt={tech.name}
-                      height={24}
-                      width={24}
+                      height={128}
+                      width={128}
                       className="w-6 h-6 object-contain"
                       loading="lazy"
                     />

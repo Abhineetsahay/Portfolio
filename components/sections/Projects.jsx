@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
+import * as ProjectPics from "@/public/projects/index";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Projects() {
   const projectCategories = [
@@ -10,7 +12,8 @@ export default function Projects() {
         {
           title: "Donum Website",
           description: `Designed and developed a responsive e-commerce platform for a campus-based startup. 
-        Integrated Firebase Authentication for secure admin access, Cloudinary for image optimization, and Redux for managing cart and product states.`,
+          Helped the startup to increase the number of customers by <strong>15%</strong>.
+          Used Firebase for proper authorization and authentication.`,
           techStack: [
             "Next.js",
             "TypeScript",
@@ -19,14 +22,14 @@ export default function Projects() {
             "Framer Motion",
             "Firebase",
           ],
+          image: ProjectPics.Donum?.src,
           github: "https://github.com/Abhineetsahay",
           live: "https://thedonumstore.netlify.app",
         },
         {
           title: "Space Blogging Platform",
           description: `Created a full-stack blogging platform with secure Google Sign-In using Firebase Authentication.
-
-        Test with 10 users and update the website according to their feedback`,
+          Tested with <strong>10</strong> users and updated the website based on their feedback.`,
           techStack: [
             "React",
             "Tailwind CSS",
@@ -36,6 +39,7 @@ export default function Projects() {
             "MongoDB",
             "Node.js",
           ],
+          image: ProjectPics.SpaceBlog?.src,
           github: "https://github.com/Abhineetsahay/Space-Blog",
           live: "https://space-blog-phi.vercel.app/",
         },
@@ -51,6 +55,7 @@ export default function Projects() {
             "MongoDB",
             "Node.js",
           ],
+          image: ProjectPics.SpaceExplorer?.src,
           github: "https://github.com/Abhineetsahay/Space-Explorer",
           live: "https://space-explorer-omega.vercel.app/",
         },
@@ -61,7 +66,8 @@ export default function Projects() {
       projects: [
         {
           title: "Customer Churn Prediction",
-          description: `Built a machine learning model to predict customer churn using logistic regression and decision trees. Analyzed customer behavior patterns and visualized key trends to aid business decision-making.`,
+          description: `Built a machine learning model to predict customer churn using logistic regression and decision trees.
+          Achieved an accuracy of <strong>80%</strong> using logistic regression and <strong>74%</strong> via decision trees.`,
           techStack: [
             "Python",
             "scikit-learn",
@@ -74,7 +80,8 @@ export default function Projects() {
         },
         {
           title: "Loan Approval Predictor",
-          description: `Developed a predictive model to classify whether a loan should be approved based on user attributes. Implemented using logistic regression and decision trees with effective data preprocessing and visualization.`,
+          description: `Developed a predictive model to classify whether a loan should be approved based on user attributes. 
+          Achieved an accuracy of <strong>76%</strong> using logistic regression.`,
           techStack: [
             "Python",
             "scikit-learn",
@@ -87,7 +94,8 @@ export default function Projects() {
         },
         {
           title: "Titanic Survival Classifier",
-          description: `Solved the classic Titanic dataset challenge by building a Random Forest model to predict survival. Emphasized feature engineering and model evaluation to improve accuracy.`,
+          description: `Solved the classic Titanic dataset challenge by building a Random Forest model to predict survival. 
+          Achieved <strong>76%</strong> accuracy through hyperparameter tuning.`,
           techStack: [
             "Python",
             "scikit-learn",
@@ -96,6 +104,27 @@ export default function Projects() {
             "Seaborn",
           ],
           github: "https://github.com/Abhineetsahay/Titanic",
+          live: "",
+        },
+      ],
+    },
+    {
+      category: "Data Structures & Algorithms",
+      projects: [
+        {
+          title: "DSA from Scratch",
+          description: `Built a complete repository implementing all major data structures and algorithms from scratch in C++.
+          Includes arrays, linked lists, trees, graphs, sorting algorithms, dynamic programming, and more.`,
+          techStack: ["C++", "STL", "GitHub"],
+          github: "https://github.com/Abhineetsahay/DataStructures",
+          live: "",
+        },
+        {
+          title: "CSES Problem List Tracker",
+          description: `Maintained a curated list of solved problems from the CSES Problem Set with categorized difficulty levels, topic tags, and personal notes.
+          Solved over <strong>150+</strong> problems covering recursion, graphs, and DP.`,
+          techStack: ["C++", "STL", "GitHub"],
+          github: "https://github.com/Abhineetsahay/CSES",
           live: "",
         },
       ],
@@ -193,9 +222,26 @@ export default function Projects() {
                       )}
                     </div>
                   </div>
-                  <p className="text-gray-300 text-sm mb-4 whitespace-pre-line">
-                    {project.description}
-                  </p>
+                  {
+                    <div className="w-full h-[200px] rounded-lg overflow-hidden mb-4">
+                      <Image
+                        src={
+                          project.image ||
+                          "https://placehold.co/200/png?text=Image Not available"
+                        }
+                        alt={project.title}
+                        width={240}
+                        height={240}
+                        className="object-cover w-full h-full"
+                        loading="lazy"
+                      />
+                    </div>
+                  }
+
+                  <p
+                    className="text-gray-300 text-sm mb-4 whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                  ></p>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.techStack.map((tech) => (
                       <span

@@ -64,7 +64,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "rounded-3xl w-full h-full min-h-[340px] p-0 overflow-hidden bg-white/10 backdrop-blur-md border border-white/10 shadow-xl transition-transform duration-200 group-hover:scale-[1.03] group-hover:shadow-xl relative z-20",
+        "rounded-3xl w-full h-full min-h-[340px] p-0 overflow-hidden bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-md border border-blue-500shadow-xl transition-transform duration-200 group-hover:scale-[1.03] group-hover:shadow-xl relative z-20",
         className
       )}
     >
