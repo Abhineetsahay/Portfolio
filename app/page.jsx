@@ -7,6 +7,7 @@ import Home from "@/components/sections/Home";
 import Projects from "@/components/sections/Projects";
 import Achievements from "@/components/sections/Achievements";
 import Connect from "@/components/sections/Connect";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Main() {
   const { scrollYProgress } = useScroll();
@@ -22,7 +23,7 @@ export default function Main() {
         style={{ scaleX }}
         className="fixed top-0 left-0 h-1 w-full origin-left z-[9999] bg-white"
       />
-
+      <Analytics/>
       <div className="relative z-10 scroll-smooth">
         <Home />
         <About />
