@@ -8,7 +8,6 @@ export default function LenisScroll({ children }) {
     const lenis = new Lenis({
       duration: 0.8,
       smooth: true,
-      easing:true,
       direction: 'vertical',
       gestureDirection: 'vertical',
     });

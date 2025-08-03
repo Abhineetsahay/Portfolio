@@ -18,13 +18,18 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleScroll = (href) => {
+  setMobileMenuOpen(false);
+  setTimeout(() => {
+    const element = document.querySelector(href);
+    if (!element) return;
+
     if (typeof window !== "undefined" && window.lenis) {
-      window.lenis.scrollTo(href, { offset: -60 });
+      window.lenis.scrollTo(element, { offset: -60 });
     } else {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setMobileMenuOpen(false);
-  };
+  }, 100); 
+};
 
   return (
     <header className="w-full fixed top-0 z-50 bg-black/70 backdrop-blur-md border-b border-gray-800">
