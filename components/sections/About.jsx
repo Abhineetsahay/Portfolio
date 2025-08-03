@@ -1,6 +1,5 @@
 "use client";
-
-import { HoverEffect } from "@/components/ui/card-hover-effect";
+import ParallaxCards from "../ui/ParllexCard";
 
 const SectionTitle = ({ title }) => (
   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-8 text-center">
@@ -14,27 +13,23 @@ const sections = [
   {
     title: "About Me",
     description:
-      "Hi, I’m Abhineet Sahay, a 3rd-year Computer Science student at KIIT University.\nI’m passionate about building meaningful and impactful software solutions.\nI’m constantly striving to improve my skills as a future Software developer.",
+      "Hi, I’m Abhineet Sahay, a 3rd-year Computer Science student at KIIT University.\nI’m passionate about building meaningful and impactful software solutions.\nI’m constantly striving to improve my skills as a future Software Developer.",
+    content: <div className="p-4 text-white text-center">👨‍💻 Dev Card</div>,
   },
   {
     title: "About My Tech Stack",
     description:
       "My core expertise lies in the MERN stack with TypeScript.\nI enjoy building full-stack applications.\nI’m also exploring Machine Learning and Competitive Programming to sharpen my problem-solving skills.",
+    content: <div className="p-4 text-white text-center">🛠️ Stack Card</div>,
   },
   {
     title: "Non-Tech Interests",
     description:
       "Outside of tech, I love listening to music and watching cricket.\nI also enjoy exploring historical topics, which help me stay balanced and inspired.",
+    content: <div className="p-4 text-white text-center">🎧 Hobby Card</div>,
   },
 ];
 
 export default function About() {
-  return (
-    <section className="w-full px-4 py-16 flex flex-col items-center justify-center">
-      <SectionTitle title="Who I Am?" />
-      <div className="w-full max-w-6xl mx-auto">
-        <HoverEffect items={sections} className="gap-10" />
-      </div>
-    </section>
-  );
+  return <ParallaxCards content={sections} />;
 }

@@ -17,7 +17,7 @@ export default function Main() {
   });
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative">
       <motion.div
         style={{ scaleX }}
         className="fixed top-0 left-0 h-1 w-full origin-left z-[9999] bg-white"

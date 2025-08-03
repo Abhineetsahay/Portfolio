@@ -113,16 +113,16 @@ export default function Projects() {
       projects: [
         {
           title: "DSA from Scratch",
-          description: `Built a complete repository implementing all major data structures and algorithms from scratch in C++.
-          Includes arrays, linked lists, trees, graphs, sorting algorithms, dynamic programming, and more.`,
+          description: `Built an ongoing repository implementing major data structures and algorithms in C++.
+          Still expanding it as I explore new topics like trees, graphs, and dynamic programming.`,
           techStack: ["C++", "STL", "GitHub"],
           github: "https://github.com/Abhineetsahay/DataStructures",
           live: "",
         },
         {
           title: "CSES Problem List Tracker",
-          description: `Maintained a curated list of solved problems from the CSES Problem Set with categorized difficulty levels, topic tags, and personal notes.
-          Solved over <strong>150+</strong> problems covering recursion, graphs, and DP.`,
+          description: `Maintaining a categorized list of solved problems from the CSES Problem Set.
+          Solved over <strong>150+</strong> problems across recursion, graphs, and DP.`,
           techStack: ["C++", "STL", "GitHub"],
           github: "https://github.com/Abhineetsahay/CSES",
           live: "",
