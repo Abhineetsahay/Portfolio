@@ -19,18 +19,17 @@ export default function Navbar() {
 
   const handleScroll = (href) => {
     if (typeof window !== "undefined" && window.lenis) {
-      window.lenis.scrollTo(href, { offset: -60 }); 
+      window.lenis.scrollTo(href, { offset: -60 });
+    } else {
+      element.scrollIntoView({ behavior: "smooth" });
     }
-    setMobileMenuOpen(false); 
+    setMobileMenuOpen(false);
   };
 
   return (
     <header className="w-full fixed top-0 z-50 bg-black/70 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <Link
-          href="/"
-          className="text-white text-xl font-bold cursor-pointer"
-        >
+        <Link href="/" className="text-white text-xl font-bold cursor-pointer">
           Abhineet Sahay
         </Link>
 
@@ -68,13 +67,17 @@ export default function Navbar() {
           className="md:hidden bg-black/90 backdrop-blur px-6 py-4 space-y-4"
         >
           {navItems.map((item) => (
-            <button
+            <Link
               key={item.href}
-              onClick={() => handleScroll(item.href)}
+              href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll(item.href);
+              }}
               className="block text-left w-full text-gray-300 hover:text-white text-base"
             >
               {item.name}
-            </button>
+            </Link>
           ))}
         </motion.div>
       )}
