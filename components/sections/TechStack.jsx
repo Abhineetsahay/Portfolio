@@ -69,7 +69,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="w-full py-10">
+    <section className="w-full py-10" id="techstack">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         My Tech Stack
       </h2>

@@ -31,5 +31,9 @@ const sections = [
 ];
 
 export default function About() {
-  return <ParallaxCards content={sections} />;
+  return (
+    <section id="about">
+      <ParallaxCards content={sections} />
+    </section>
+  );
 }

@@ -122,7 +122,7 @@ export default function Projects() {
         {
           title: "CSES Problem List Tracker",
           description: `Maintaining a categorized list of solved problems from the CSES Problem Set.
-          Solved over <strong>150+</strong> problems across recursion, graphs, and DP.`,
+          Solved problems across Introductory problems, graphs, sorting and searching.`,
           techStack: ["C++", "STL", "GitHub"],
           github: "https://github.com/Abhineetsahay/CSES",
           live: "",
@@ -132,7 +132,10 @@ export default function Projects() {
   ];
 
   return (
-    <section className="relative min-h-screen w-full px-4 py-20 flex flex-col items-center justify-center">
+    <section
+      className="relative min-h-screen w-full px-4 py-20 flex flex-col items-center justify-center"
+      id="projects"
+    >
       <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
         Projects
       </h2>

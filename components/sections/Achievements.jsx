@@ -26,7 +26,9 @@ const achievements = [
 
 export default function Achievements() {
   return (
-    <section className="w-full max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <section className="w-full max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
+       id="achievements"
+     >
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 relative inline-block">
         Achievements
         <span className="absolute left-0 -bottom-1 w-1/2 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full" />

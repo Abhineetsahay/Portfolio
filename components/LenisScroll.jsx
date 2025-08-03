@@ -6,12 +6,14 @@ import Lenis from '@studio-freight/lenis';
 export default function LenisScroll({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 0.8, 
+      duration: 0.8,
       smooth: true,
+      easing:true,
       direction: 'vertical',
       gestureDirection: 'vertical',
     });
 
+    window.lenis = lenis;
 
     let rafId = null;
     function raf(time) {

@@ -2,6 +2,7 @@
 
 import { Github, Linkedin, Code, Activity, BrainCircuit, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const socialLinks = [
   {
@@ -38,7 +39,8 @@ const socialLinks = [
 
 export default function Connect() {
   return (
-    <section className="w-full max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <section className="w-full max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
+    id="connect">
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 relative inline-block">
         Connect with me
         <span className="absolute left-0 -bottom-1 w-1/2 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full" />
@@ -46,18 +48,19 @@ export default function Connect() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {socialLinks.map((link, idx) => (
-          <a
+          <Link
             key={idx}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "flex items-center gap-3 p-4 bg-[#111111] border border-gray-800 rounded-xl text-white hover:border-blue-500 hover:shadow-lg transition"
+              "flex items-center gap-3 p-4 bg-[#111111] border border-gray-800 rounded-xl text-white hover:border-blue-500 hover:shadow-lg transition",
+              "hover:scale-105"
             )}
           >
             {link.icon}
             <span className="text-md font-medium">{link.name}</span>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
