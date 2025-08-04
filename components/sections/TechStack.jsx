@@ -38,7 +38,7 @@ export default function TechStack() {
         { name: "JWT", icon: TechStackIcons.JWT.src },
       ],
     }, {
-      category: "Machine learning",
+      category: "Machine Learning",
       items: [
         { name: "NumPy", icon: TechStackIcons.Numpy.src },
         { name: "Pandas", icon: TechStackIcons.Pandas.src},
