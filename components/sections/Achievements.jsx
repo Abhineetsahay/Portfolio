@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const achievements = [
   {
-    title: "500+ DSA questions in LeetCode",
+    title: "600+ DSA questions in LeetCode",
   },
   {
     title:
-      '<span class="text-[#39ff14]">Pupil</span> on Codeforces — max rating: <strong>1303</strong>',
+      '<span class="text-[#39ff14]">Specialist</span> on Codeforces — max rating: <strong>1401</strong>',
   },
   {
     title: "3⭐ on CodeChef max rating: <strong>1627</strong>",

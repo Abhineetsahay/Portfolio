@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as TechStackIcons from "@/public/TechStack";
@@ -37,13 +36,15 @@ export default function TechStack() {
         { name: "Socket.io", icon: TechStackIcons.Socket.src },
         { name: "JWT", icon: TechStackIcons.JWT.src },
       ],
-    }, {
-      category: "Machine Learning",
+    },
+    {
+      category: "AI / ML ",
       items: [
         { name: "NumPy", icon: TechStackIcons.Numpy.src },
-        { name: "Pandas", icon: TechStackIcons.Pandas.src},
+        { name: "Pandas", icon: TechStackIcons.Pandas.src },
         { name: "Matplotlib", icon: TechStackIcons.Matplotlib.src },
         { name: "Scikit-Learn", icon: TechStackIcons.ScikitLearn.src },
+        { name: "LangChain", icon: TechStackIcons.LangChain.src },
       ],
     },
     {
@@ -65,7 +66,7 @@ export default function TechStack() {
         { name: "Netlify", icon: TechStackIcons.Netlify.src },
         { name: "Vercel", icon: TechStackIcons.Vercel.src },
       ],
-    }
+    },
   ];
 
   return (
@@ -90,7 +91,7 @@ export default function TechStack() {
                       alt={tech.name}
                       height={128}
                       width={128}
-                      className="w-6 h-6 object-contain"
+                      className="w-8 h-8 object-contain"
                       loading="lazy"
                     />
                   </div>

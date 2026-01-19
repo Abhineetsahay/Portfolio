@@ -73,7 +73,7 @@ export const InfiniteMovingCards = ({
           <li key={idx} className="shrink-0">
             <Card
               className={cn(
-                "w-[300px] md:w-[400px] max-w-full p-5 bg-[#111111] text-white border-l-4 shadow-lg transition-transform duration-200",
+                "w-[300px] md:w-[400px] flex items-center justify-center flex-col max-w-full p-5 bg-[#111111] text-white border-l-4 shadow-lg transition-transform duration-200",
                 "hover:scale-[1.02] hover:border-blue-500"
               )}
             >

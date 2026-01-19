@@ -65,6 +65,19 @@ export default function Projects() {
       category: "Machine Learning",
       projects: [
         {
+          title: "Multimodal RAG Academic Notes",
+          description: `Built a multimodal Retrieval-Augmented Generation (RAG) system for academic notes that allows querying across text and images using embeddings and vector search. Designed to improve information retrieval accuracy and study efficiency.`,
+          techStack: [
+            "Python",
+            "LangChain",
+            "Vector Database",
+            "Multimodal embeddings",
+          ],
+          github:
+            "https://github.com/Abhineetsahay/multimodal-rag-academic-notes",
+          live: "",
+        },
+        {
           title: "Customer Churn Prediction",
           description: `Built a machine learning model to predict customer churn using logistic regression and decision trees.
           Achieved an accuracy of <strong>80%</strong> using logistic regression and <strong>74%</strong> via decision trees.`,
@@ -79,32 +92,18 @@ export default function Projects() {
           live: "",
         },
         {
-          title: "Loan Approval Predictor",
-          description: `Developed a predictive model to classify whether a loan should be approved based on user attributes. 
-          Achieved an accuracy of <strong>76%</strong> using logistic regression.`,
+          title: "Code Complexity Predictor",
+          description: `Built a machine learning system to predict the complexity level of source code based on extracted features such as lines of code, loops, and conditional statements. 
+  Designed to help developers identify potentially hard-to-maintain code early in the development cycle.`,
           techStack: [
             "Python",
             "scikit-learn",
             "Pandas",
-            "Matplotlib",
-            "Seaborn",
           ],
-          github: "https://github.com/Abhineetsahay/Loan-Predictor",
-          live: "",
-        },
-        {
-          title: "Titanic Survival Classifier",
-          description: `Solved the classic Titanic dataset challenge by building a Random Forest model to predict survival. 
-          Achieved <strong>76%</strong> accuracy through hyperparameter tuning.`,
-          techStack: [
-            "Python",
-            "scikit-learn",
-            "Pandas",
-            "Matplotlib",
-            "Seaborn",
-          ],
-          github: "https://github.com/Abhineetsahay/Titanic",
-          live: "",
+           image: ProjectPics.CodeComplexityPredictor?.src,
+          github: "https://github.com/Abhineetsahay/Code-Complexity-Predictor",
+          live: "https://original-crow-absh1231-e596c0b9.koyeb.app/",
+          
         },
       ],
     },

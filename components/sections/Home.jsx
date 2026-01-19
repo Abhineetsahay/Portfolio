@@ -55,7 +55,7 @@ export default function Home() {
         whileHover={{ scale: 1.05 }}
       >
         <Link
-          href="https://drive.google.com/file/d/1oc0GoOrNNapQfx7LFLWxHYEUL2vPFUMk/view"
+          href="https://drive.google.com/file/d/1M9x8mVW1ZhFBw7YOeTBXQwHPwO6DeYfJ/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg shadow-lg transition"
