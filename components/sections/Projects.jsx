@@ -10,6 +10,24 @@ export default function Projects() {
       category: "Web Development",
       projects: [
         {
+          title: "AniList — Anime Recommendation Platform",
+          description:
+            "Built a full-stack anime platform with JWT auth, shareable watchlists, and collaborative editing. Developed a content-based recommender on 500+ anime, deployed via FastAPI. Optimized performance using Azure Blob Storage and PostgreSQL caching.",
+          techStack: [
+            "Next.js",
+            "TypeScript",
+            "PostgreSQL",
+            "Prisma",
+            "Python",
+            "FastAPI",
+            "Machine Learning",
+            "Azure Blob Storage",
+          ],
+          image: ProjectPics.AniList?.src,
+          github: "https://github.com/Abhineetsahay/Anime-Recommendation",
+          live: "https://anime-recommendation-abhineet-sahays-projects.vercel.app/",
+        },
+        {
           title: "Donum Website",
           description: `Designed and developed a responsive e-commerce platform for a campus-based startup. 
           Helped the startup to increase the number of customers by <strong>15%</strong>.
@@ -49,11 +67,6 @@ export default function Projects() {
           techStack: [
             "React",
             "Tailwind CSS",
-            "Firebase",
-            "Express.js",
-            "OAuth 2.0",
-            "MongoDB",
-            "Node.js",
           ],
           image: ProjectPics.SpaceExplorer?.src,
           github: "https://github.com/Abhineetsahay/Space-Explorer",
@@ -95,15 +108,10 @@ export default function Projects() {
           title: "Code Complexity Predictor",
           description: `Built a machine learning system to predict the complexity level of source code based on extracted features such as lines of code, loops, and conditional statements. 
   Designed to help developers identify potentially hard-to-maintain code early in the development cycle.`,
-          techStack: [
-            "Python",
-            "scikit-learn",
-            "Pandas",
-          ],
-           image: ProjectPics.CodeComplexityPredictor?.src,
+          techStack: ["Python", "scikit-learn", "Pandas"],
+          image: ProjectPics.CodeComplexityPredictor?.src,
           github: "https://github.com/Abhineetsahay/Code-Complexity-Predictor",
           live: "https://original-crow-absh1231-e596c0b9.koyeb.app/",
-          
         },
       ],
     },

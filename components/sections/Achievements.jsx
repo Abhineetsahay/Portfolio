@@ -9,7 +9,7 @@ const achievements = [
   },
   {
     title:
-      '<span class="text-[#39ff14]">Specialist</span> on Codeforces — max rating: <strong>1401</strong>',
+      '<span class="text-cyan-400">Specialist</span> on Codeforces — max rating: <strong>1401</strong>',
   },
   {
     title: "3⭐ on CodeChef max rating: <strong>1627</strong>",

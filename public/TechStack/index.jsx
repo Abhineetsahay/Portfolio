@@ -26,6 +26,7 @@ export { default as Redux } from "./Redux.png";
 export { default as ScikitLearn } from "./scikitlearn.png";
 export { default as Socket } from "./socket.png";
 export { default as Tailwind } from "./Tailwind.png";
+export { default as Azure } from "./Azure.png";
 export { default as Typescript } from "./Typescript.png";
 export { default as Vercel } from "./Vercel.png";
 export { default as LangChain } from "./Langchain.png";

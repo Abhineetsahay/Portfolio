@@ -63,6 +63,7 @@ export default function TechStack() {
         { name: "GitHub", icon: TechStackIcons.GitHub.src },
         { name: "Postman", icon: TechStackIcons.PostMan.src },
         { name: "Docker", icon: TechStackIcons.Docker.src },
+        { name :"Azure", icon: TechStackIcons.Azure.src},
         { name: "Netlify", icon: TechStackIcons.Netlify.src },
         { name: "Vercel", icon: TechStackIcons.Vercel.src },
       ],
